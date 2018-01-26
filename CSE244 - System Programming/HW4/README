@@ -13,8 +13,6 @@ it writes the total number of the string founded in that directory.
 
 Also it print to the terminal screen these informations:
 
-content of terminal screen
-
 Total number of strings found :           XX
 Number of directories searched:           XX
 Number of files searched:                 XX
