@@ -1,11 +1,26 @@
-Programı çalışıtrabilmek için önce 
+Search target string in files in the given directories (if given directory has directories also search for its). 
 
-make
+It creates a process for every directories and it creates a thread for every text files in the given directory.
+Also it handles signals.
 
-yapmalısınız hemen ardından,
-
+It is runs in the following way
+after run make command
 ./grepTh <target string> <folderName>
 
-şeklinde çalıştırılır program.
+When run, it creates a file called "log.log" and it tells where the string is located in the txt files 
+in the directories and in the directories in the directories that are entered in this file. Finally 
+it writes the total number of the string founded in that directory.
 
-cashcate: max thread sayısı o anca çalısan, her 
+Also it print to the terminal screen these informations:
+
+content of terminal screen
+
+Total number of strings found :           XX
+Number of directories searched:           XX
+Number of files searched:                 XX
+Number of lines searched:                 XX
+Number of cascade threads created:        XX
+Number of search threads created:         XX
+Max # of threads running concurrently:     XX
+Total run time, in milliseconds.          XX
+Exit condition:          (normal, due to error#, due to signal no#)
