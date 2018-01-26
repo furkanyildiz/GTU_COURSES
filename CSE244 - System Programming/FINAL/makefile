@@ -1,0 +1,17 @@
+all: System
+
+System: clients.o
+	gcc -o clients clients.o -pthread -lm
+
+clients.o: clients.c
+	gcc -c  clients.c
+
+clients.c : server.o
+	gcc -o server server.o -pthread -lm
+
+server.o : server.c
+	
+	gcc -c server.c
+
+clean:
+	rm *.o server clients

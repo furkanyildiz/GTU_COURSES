@@ -1,0 +1,3 @@
+MOV R1, 10  
+SUB R1, 1	
+HLT	

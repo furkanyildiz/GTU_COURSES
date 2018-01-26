@@ -1,0 +1,11 @@
+Programı çalışıtrabilmek için önce 
+
+make
+
+yapmalısınız hemen ardından,
+
+./grepTh <target string> <folderName>
+
+şeklinde çalıştırılır program.
+
+cashcate: max thread sayısı o anca çalısan, her 

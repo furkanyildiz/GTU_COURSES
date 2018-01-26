@@ -1,0 +1,19 @@
+Bu dosya make komutu yapıldıktan sonra
+
+./listdir <Target String> <Directory Name>
+
+ile çalıştırılarak kullanılır.
+
+Çalıştırılınca log.log isiminde bir dosya oluşturur ve bu dosyada girilen directorylerdeki ve onların içlerindeki
+directorylerdeki txt dosyalarında aranan stringin nerede bulunduğu yazar
+dosyanın en sonunda ise aranan directoryde ve o directorynin içinde aranan stringin toplam
+kaç adet bulunduğu yazar.
+
+!!!!!!!
+İkinci kez çalıştırdığınızda sonuçları daha net görebilmek için ilk çalıştığında oluşan
+"log.log" dosyasını siliniz.
+!!!!!!!
+
+
+Furkan YILDIZ
+141044031

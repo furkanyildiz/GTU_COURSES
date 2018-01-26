@@ -1,0 +1,4 @@
+Moodle kaynaklarýnda en baþta bulunan Test Virtual Machine üzerinde denemiþ olmak. (herhangi bir vm deðil, herhangi bir ubuntu versiyonu deðil)
+Memory leak hatasýna itiraz için -> valgrind --tool=memcheck -v ./grepSh 13th ../../base/t2 > valgrind_log_memusage.txt 2>&1 derleyip, oluþan text file itiraz mailine eklemek
+m2,m3 kodlarý haberleþme için shared memory ve message queue kullanmayanlara verilmiþtir. Nasýl ver nerde kullandýðýnýzdan emin deðilseniz, itiraz etmeden önce kodunuzda shared memory,message queue ait kod bloklarýný kaldýrýn, eðer kodunuz sorunsuz þekilde beklenen sonucu üretiyorsa kullanmamýþsýnýz demektir.
+Yukardaki maddelerin hiçbirini dikkate almadan itiraz edenler deðerlendirmeye alýnmayacaktýr. 
