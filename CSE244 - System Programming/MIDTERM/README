@@ -1,4 +1,4 @@
-after "make" make command,
+after "make" command,
 
 ./server <MILLISECOND> <n> <PIPE_NAME>
 ./client <PIPE_NAME>
