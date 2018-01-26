@@ -1,0 +1,9 @@
+after "make" command,
+
+./server <port #, id> <thpool size, k >
+./clients <#of columns of A, m> <#of rows of A, p> <#of clients, q> < port no>
+
+All information about final project in the,
+
+SysProg2017Final and 2017Final.pdf : Description of the problem
+141044031_final_report : Report of the problem solution.
