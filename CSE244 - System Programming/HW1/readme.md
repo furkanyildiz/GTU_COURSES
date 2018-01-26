@@ -12,8 +12,7 @@ Sample:
 
 Output:
 
-ece found in row:1, col:7
-ece found in row:1, col:9
-ece found in row:1, col:13
-
+ece found in row:1, col:7 \
+ece found in row:1, col:9 \
+ece found in row:1, col:13 \
 Totaly 3, ece found.
