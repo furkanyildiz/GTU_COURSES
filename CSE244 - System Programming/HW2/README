@@ -1,19 +1,11 @@
-Bu dosya make komutu yapıldıktan sonra
+Search target string in files in the given directories (if given directory has directories also search for its). 
 
+It creates a process for every directories and files in given directory.
+
+It is runs in the following way
+after run make command
 ./listdir <Target String> <Directory Name>
 
-ile çalıştırılarak kullanılır.
-
-Çalıştırılınca log.log isiminde bir dosya oluşturur ve bu dosyada girilen directorylerdeki ve onların içlerindeki
-directorylerdeki txt dosyalarında aranan stringin nerede bulunduğu yazar
-dosyanın en sonunda ise aranan directoryde ve o directorynin içinde aranan stringin toplam
-kaç adet bulunduğu yazar.
-
-!!!!!!!
-İkinci kez çalıştırdığınızda sonuçları daha net görebilmek için ilk çalıştığında oluşan
-"log.log" dosyasını siliniz.
-!!!!!!!
-
-
-Furkan YILDIZ
-141044031
+When run, it creates a file called "log.log" and it tells where the string is located in the txt files 
+in the directories and in the directories in the directories that are entered in this file. Finally 
+it writes the total number of the string founded in that directory.
