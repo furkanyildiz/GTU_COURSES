@@ -1,0 +1,13 @@
+Search target string in files in the given directories (if given directory has directories also search for its). 
+
+It creates a process for every directories and files in given directory.
+And it comminicate with FIFO for carrying information of sub directories to upper directories.
+
+
+It is runs in the following way
+after run make command
+./exe <Target String> <Directory Name>
+
+When run, it creates a file called "log.log" and it tells where the string is located in the txt files 
+in the directories and in the directories in the directories that are entered in this file. Finally 
+it writes the total number of the string founded in that directory.
