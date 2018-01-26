@@ -1,0 +1,4 @@
+Info (10281): Verilog HDL Declaration information at mux1.v(4): object "s1" differs only in case from object "S1" in the same scope
+Info (10281): Verilog HDL Declaration information at mux1.v(5): object "s2" differs only in case from object "S2" in the same scope
+Info (10281): Verilog HDL Declaration information at mux1.v(6): object "s3" differs only in case from object "S3" in the same scope
+Info (10281): Verilog HDL Declaration information at mux1.v(7): object "s4" differs only in case from object "S4" in the same scope

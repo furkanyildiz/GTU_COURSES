@@ -1,0 +1,5 @@
+module mux_2_1(out,do,d1,select);
+
+output out;
+input select;
+wire select;

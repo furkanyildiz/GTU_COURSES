@@ -1,0 +1,16 @@
+module mux_4_1(out,d0,d1,d2,d3,select);
+
+input[1:0] select;
+input[4:0] s1;
+input[4:0] s2;
+input[4:0] s3;
+input[4:0] s4;
+
+output[4:0] out;
+wire[4:0] out;
+wire[1:0] select;
+
+wire[4:0] s1;
+wire[4:0] s2;
+wire[4:0] s3;
+wire[4:0] s4;

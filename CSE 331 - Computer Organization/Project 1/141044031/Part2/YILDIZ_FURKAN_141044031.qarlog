@@ -1,0 +1,27 @@
+Quartus II Archive log --	C:/Users/yldzf/Desktop/Project1/YILDIZ_FURKAN_141044031.qarlog
+
+Archive:	C:/Users/yldzf/Desktop/Project1/YILDIZ_FURKAN_141044031.qar
+Date:		Fri Oct 27 23:10:20 2017
+Quartus II 64-Bit		13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+	=========== Files Selected: ===========
+D:/altera/13.1/workspace/hw1/db/hw1.cmp.hdb
+D:/altera/13.1/workspace/hw1/db/hw1.db_info
+D:/altera/13.1/workspace/hw1/five_bit_adder.v
+D:/altera/13.1/workspace/hw1/five_bit_adder_testbench.v
+D:/altera/13.1/workspace/hw1/full_adder.v
+D:/altera/13.1/workspace/hw1/half_adder.v
+D:/altera/13.1/workspace/hw1/hw1.qpf
+D:/altera/13.1/workspace/hw1/hw1.qsf
+D:/altera/13.1/workspace/hw1/incremental_db/compiled_partitions/hw1.db_info
+D:/altera/13.1/workspace/hw1/likeALU.v
+D:/altera/13.1/workspace/hw1/likeALU_demo.v
+D:/altera/13.1/workspace/hw1/like_alu_testbench.v
+D:/altera/13.1/workspace/hw1/mux_2_1.v
+D:/altera/13.1/workspace/hw1/mux_4_1.v
+D:/altera/13.1/workspace/hw1/mux_testbench.v
+d:/altera/13.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 16 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

@@ -1,0 +1,5 @@
+module likeALU(out, ​ ​inp_A, inp_B, ​ ​select);
+
+input  ​inp_A, inp_B, ​ ​select;
+wire out;
+
