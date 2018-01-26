@@ -1,8 +1,7 @@
-ONCE "make" KOMUTU ILE DERLEYİN
+after "make" make command,
 
-ARDINDAN
-./server <milisaniye> <n> <pipename>
-./client <pipename>
+./server <MILLISECOND> <n> <PIPE_NAME>
+./client <PIPE_NAME>
 ./results
 
-şeklinde çalıştırın.
+all information about midterm in the report.
