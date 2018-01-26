@@ -73,16 +73,9 @@ int updateList(char pidOfClients[][200]){
 }
 void HandleSignal(int sig, siginfo_t *siginfo, void *context)
 {
-    double ** matrix;
     int j,i;
     char path[1024];
     char itspath[1024];
-    char pidOfClient[10];
-    double timeOfMatrixGenerated;
-    char writeLogInformations[1024];
-    double detOfMatrix;
-    int fifowrite;
-    int childpid;
 	getcwd(path,1024);
     strcat(path,"/Log/");
     strcpy(itspath, path);
@@ -107,7 +100,6 @@ void HandleSignal(int sig, siginfo_t *siginfo, void *context)
 					strcat(path,"/Log/");
 					strcat(path,workingClients[i]);
 					strcat(path,"_results");
-					fprintf(stderr, "SILLL:%s\n",path );
 					unlink(path);	
 				}
 			}
@@ -130,8 +122,6 @@ void HandleSignal(int sig, siginfo_t *siginfo, void *context)
 					strcat(path,"/Log/");
 					strcat(path,workingClients[i]);
 					strcat(path,"_results");
-					fprintf(stderr, "SILLL:%s\n",path );
-					
 					unlink(path);	
 				}
 
@@ -139,8 +129,15 @@ void HandleSignal(int sig, siginfo_t *siginfo, void *context)
 			_exit(0);
 		break;
    }
+   _exit(0);
 }
-int main() {
+int main(int argc, char** argv) {
+
+    if(argc != 1){
+        fprintf(stderr, "Usage error!\n" );
+        exit(0);
+    }
+
 
 	struct MatrixInformation createdMatrix;
 
@@ -155,12 +152,13 @@ int main() {
     strcat(itspath,LOGFILE);
 	FILE* pFile;
 	mainpid = getpid();
+	createdMatrix.pidOfClient = getpid();
+	createdMatrix.result1 = 23.23;
+	createdMatrix.timeElaps1 = 23.23;
+	createdMatrix.result2 = 23.23;
+	createdMatrix.timeElaps2 = 23.23;
 
-
-    struct sigaction new_action, old_action;
-
-
-
+    struct sigaction new_action;
 
 	while(1){
 
@@ -169,7 +167,6 @@ int main() {
 		new_action.sa_flags = SA_SIGINFO;
 		sigaction (SIGALRM, &new_action , NULL);
 		sigaction (SIGINT, &new_action , NULL);
-
 		
 	    countOfClients = updateList(pidOfClients);
 	    getcwd(path,1024);
@@ -192,8 +189,17 @@ int main() {
 					    int fiforead;
 					   	if ((fiforead = open(path, O_RDWR)) < 0)
 					        fprintf(stderr, "open error\n" );
-					    if (read(fiforead, &createdMatrix, sizeof(createdMatrix)) < 0)
-					        fprintf(stderr, "read error\n" );
+
+				        if (read(fiforead, &createdMatrix.pidOfClient, sizeof(int)) < 0)
+				            fprintf(stderr, "read error\n" );       
+				        if (read(fiforead, &createdMatrix.result1, sizeof(double)) < 0)
+				            fprintf(stderr, "read error\n" );       
+				        if (read(fiforead, &createdMatrix.timeElaps1, sizeof(double)) < 0)
+				            fprintf(stderr, "read error\n" );       
+				        if (read(fiforead, &createdMatrix.result2, sizeof(double)) < 0)
+				            fprintf(stderr, "read error\n" );       
+				        if (read(fiforead, &createdMatrix.timeElaps2, sizeof(double)) < 0)
+				            fprintf(stderr, "read error\n" );
 					    close(fiforead);
 
 

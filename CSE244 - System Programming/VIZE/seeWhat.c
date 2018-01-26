@@ -82,10 +82,9 @@ void HandleSignal(int sig, siginfo_t *siginfo, void *context)
             
             strcpy(temp,path);
             strcat(temp,"_results");
-            fprintf(stderr, "SILLL:%s\n",temp );
-            fprintf(stderr, "SILLL:%s\n",path );
             unlink(temp);
             unlink(path);
+            kill(showResultPid,SIGALRM);
             _exit(0);
         break;
         case SIGUSR1:
@@ -94,8 +93,6 @@ void HandleSignal(int sig, siginfo_t *siginfo, void *context)
         case SIGINT:
             strcpy(temp,path);
             strcat(temp,"_results");
-            fprintf(stderr, "SILLL:%s\n",temp );
-            fprintf(stderr, "SILLL:%s\n",path );
             unlink(path);
             unlink(temp);
             kill(timeServerPid,SIGALRM);
@@ -170,12 +167,20 @@ void seeWhat(char * mainpipe){
     int childpid2;
     char pid[10];
     sprintf(pid,"%d",getpid());
+    struct MatrixInformation createdMatrix;
+    //To initilaze
+    createdMatrix.pidOfClient = 0;
+    createdMatrix.result1 = 0.0;
+    createdMatrix.timeElaps1 = 0.0;
+    createdMatrix.result2 = 0.0;
+    createdMatrix.timeElaps2 = 0.0;
+
 
 
 	while(1){
 		strcpy(filename,"Log/seeWhat_");
-		//strcat(filename,pid);
-		//strcat(filename,"_");
+		strcat(filename,pid);
+		strcat(filename,"_");
 		++is;
 		getcwd(path,PATH_MAX);
 		
@@ -193,7 +198,6 @@ void seeWhat(char * mainpipe){
 	    sigaction (SIGUSR1, &new_action , NULL);
 
 
-	    fprintf(stderr, "seeWhatpid::%d, okunacak:%s\n", getpid(),temp);
 	    if ((fiforead =  open(temp, O_RDONLY)) < 0){
 	    	fprintf(stderr, "First you have to run server!\n" );
 	    	exit(1);
@@ -203,14 +207,12 @@ void seeWhat(char * mainpipe){
 	        fprintf(stderr, "read error\n" );
 
 
-	    fprintf(stderr, "timeServerPid%d\n",timeServerPid);
 	    //Time server'a seeWhat'ın pid'sini öğretmek için sinyal yolluyoruz
 		kill(timeServerPid,SIGUSR2);
 		//Time server'a matrix üretmesi için sinyal yolluyoruz.
 		kill(timeServerPid,SIGUSR1);
 
 	    char pidOfClient[10];
-	    fprintf(stderr, "close:::::\n" );
 
 	    //fiforead'i kapatınca calısmıyorr
 	    
@@ -219,10 +221,8 @@ void seeWhat(char * mainpipe){
 		unlink(path);
 
 	    int fiforead2;
-
 	    while (((fiforead2 = open(path, O_RDONLY) ) == -1) && ((errno == ENOENT) || (errno == EADDRINUSE) || (errno == EBADF)  || (errno = EINTR) 
 	    || errno == EMFILE || errno == ENFILE || errno == ENOBUFS || errno ==  EPIPE   || errno == ESTRPIPE ));
-
 
 
 
@@ -244,16 +244,11 @@ void seeWhat(char * mainpipe){
 	        }
         close(fiforead2);
 		  unlink(path);
-	    for(i =0; i<size; ++i){
-	        for(j=0; j<size; ++j)
-	            fprintf(stderr, "%.2f   ",matrix[i][j] );
-	        fprintf(stderr, "\n" );
-    	}
+
     	char matrixnum[100000];
     	sprintf(matrixnum,"%d",numOfMatrix);
     	strcat(filename,matrixnum);
     	strcat(filename,".log");
-    	fprintf(stderr, "filename:%s\n",filename );
     	pFile = fopen (filename, "a+");
         fprintf(pFile, "orijinal = [");
 
@@ -280,20 +275,16 @@ void seeWhat(char * mainpipe){
 	        }
 	    }
 
-		struct MatrixInformation createdMatrix;
-		createdMatrix.pidOfClient = getpid();
 
 
 	    int fdp[2];
 	    int pid;
-	    if(pipe(fdp)<0)
-	    	fprintf(stderr, "pipe error\n" );
+	    pipe(fdp);
     	childpid1 = fork();
     	if(childpid1 == 0){
 
     		//Do Inverse operatıon
     		inverse(InversedMatrix,size);
-	    	fprintf(stderr, "filename:%s\n",filename );
     		pFile = fopen (filename, "a+");
             long timedif;
 			struct timeval tpend;
@@ -317,28 +308,21 @@ void seeWhat(char * mainpipe){
 				fprintf(stderr, "Failed to get start time\n");
             }
    			double result1 = determinant(matrix,size) - determinant(InversedMatrix,size);
-   			fprintf(stderr, "rrrrrr1:%f   size:%d\n",result1,size );
-   			fprintf(stderr, "dddmm1:%f\n",determinant(matrix,size) );
-   			fprintf(stderr, "dddııı1:%f\n", determinant(InversedMatrix,size) );
 			if (gettimeofday(&tpend, NULL)) {
 				fprintf(stderr, "Failed to get end time\n");
 			}
 			timedif = MILLION*(tpend.tv_sec - tpstart.tv_sec) +
 			tpend.tv_usec - tpstart.tv_usec;
-        	//double timeElaps1 = (double)((toc - tic) / CLOCKS_PER_SEC)/1000;
         	double timeElaps1 =  (double)timedif / 1000.0;
-        	//clock_t toc = clock();
-        	//double timeElaps1 = (double)(toc - tic) / CLOCKS_PER_SEC;
-   			fprintf(stderr, "ttttt1:%f\n",timeElaps1 );
 
     		close(fdp[0]);
     		write(fdp[1],&result1,sizeof(double));
     		write(fdp[1],&timeElaps1,sizeof(double));
     		close(fdp[1]);
+
 	        break;	
 
     	}
-		while(r_wait(NULL) > 0);
     	if(childpid1 > 0){
 
 			close(fdp[1]);
@@ -346,90 +330,77 @@ void seeWhat(char * mainpipe){
 			read(fdp[0],&createdMatrix.timeElaps1,sizeof(double));
 			close(fdp[0]);
 		}
-
+        while(r_wait(NULL) > 0);
     	if(childpid1 == 0)
 			exit(0);
-		  perror("1.fork");
-	    fprintf(stderr, "1.fork%d\n",childpid1 );
-
-    	if(childpid1>0){
-		    int fdp[2];
-		    int pid;
-		    if(pipe(fdp)<0)
-		    	fprintf(stderr, "pipe error\n" );
-		    perror("2.fork öncesi");
-    		childpid2 = fork();
-		    fprintf(stderr, "2.fork%d\n",childpid2 );
-
-    		if(childpid2 == 0){
-
-    			//do 2d convolutıon operatıon 
-    			doConvolution(ConvolutedMatrix,size);
-    			pFile = fopen (filename, "a+");
 
 
-		        fprintf(pFile, "2dConverted = [");
+	    if(pipe(fdp)<0)
+	    	fprintf(stderr, "pipe error\n" );
+		childpid2 = fork();
 
-		   		for(i =0; i<size; ++i){
+		if(childpid2 == 0){
 
-			        for(j=0; j<size; ++j){
-			        	if(j == size-1)
-			            	fprintf(pFile, "%.3f",ConvolutedMatrix[i][j] );
-			            else
-			            	fprintf(pFile, "%.3f ",ConvolutedMatrix[i][j] );
-			        }
-		        	if(i != size-1)
-		        		fprintf(pFile, ";");
-			    	}
-		        fprintf(pFile, "]\n");
-		        fclose(pFile);
-		        long timedif;
-				struct timeval tpend;
-				struct timeval tpstart;
-		        if (gettimeofday(&tpstart, NULL)) {
-					fprintf(stderr, "Failed to get start time\n");
-				}
-	   			double result2 = determinant(matrix,size) - determinant(ConvolutedMatrix,size);
+			//do 2d convolutıon operatıon 
+			doConvolution(ConvolutedMatrix,size);
+			pFile = fopen (filename, "a+");
 
-				if (gettimeofday(&tpend, NULL)) {
-					fprintf(stderr, "Failed to get end time\n");
-				}
-				timedif = MILLION*(tpend.tv_sec - tpstart.tv_sec) +
-				tpend.tv_usec - tpstart.tv_usec;
-	        	double timeElaps2 =  (double)timedif / 1000.0;
-	    		close(fdp[0]);
-	    		write(fdp[1],&result2,sizeof(double));
-	    		write(fdp[1],&timeElaps2,sizeof(double));
-	    		close(fdp[1]);
-	    		break;
-    		}
-			while(r_wait(NULL) > 0);
 
-	    	if(childpid2 > 0){
+	        fprintf(pFile, "2dConverted = [");
 
-				close(fdp[1]);
-				read(fdp[0],&createdMatrix.result2,sizeof(double));
-				read(fdp[0],&createdMatrix.timeElaps2,sizeof(double));
-				close(fdp[0]);
+	   		for(i =0; i<size; ++i){
+
+		        for(j=0; j<size; ++j){
+		        	if(j == size-1)
+		            	fprintf(pFile, "%.3f",ConvolutedMatrix[i][j] );
+		            else
+		            	fprintf(pFile, "%.3f ",ConvolutedMatrix[i][j] );
+		        }
+	        	if(i != size-1)
+	        		fprintf(pFile, ";");
+		    	}
+	        fprintf(pFile, "]\n");
+	        fclose(pFile);
+	        long timedif;
+			struct timeval tpend;
+			struct timeval tpstart;
+	        if (gettimeofday(&tpstart, NULL)) {
+				fprintf(stderr, "Failed to get start time\n");
 			}
+   			double result2 = determinant(matrix,size) - determinant(ConvolutedMatrix,size);
 
-	    	if(childpid2 == 0)
-				exit(0);
+			if (gettimeofday(&tpend, NULL)) {
+				fprintf(stderr, "Failed to get end time\n");
+			}
+			timedif = MILLION*(tpend.tv_sec - tpstart.tv_sec) +
+			tpend.tv_usec - tpstart.tv_usec;
+        	double timeElaps2 =  (double)timedif / 1000.0;
+    		close(fdp[0]);
+    		write(fdp[1],&result2,sizeof(double));
+    		write(fdp[1],&timeElaps2,sizeof(double));
+    		close(fdp[1]);
+    		break;
+		}
 
-    	}
-		
+    	if(childpid2 > 0){
+
+			close(fdp[1]);
+			read(fdp[0],&createdMatrix.result2,sizeof(double));
+			read(fdp[0],&createdMatrix.timeElaps2,sizeof(double));
+			close(fdp[0]);
+		}
+        while(r_wait(NULL) > 0);
+
+    	if(childpid2 == 0)
+			exit(0);
+
     	numOfMatrix++;
 
     	// FILL THE STRUCT
-
-    	fprintf(stderr, "r1:%f\n", createdMatrix.result1);
-    	fprintf(stderr, "t1:%f\n", createdMatrix.timeElaps1);
-    	fprintf(stderr, "r2:%f\n", createdMatrix.result2);
-    	fprintf(stderr, "t2:%f\n", createdMatrix.timeElaps2);
+        createdMatrix.pidOfClient = getpid();
     	
         //WRITE THE STRCUT TO FIFO
         strcat(path,"_results");
-        fprintf(stderr, "shwrslt icin path:%s\n",path );
         if (mkfifo(path, 0777) == -1) {
             if (errno != EEXIST) {
                 fprintf(stderr, "[%ld]:failed to create named pipe %s: %s\n",
@@ -439,7 +410,15 @@ void seeWhat(char * mainpipe){
         int fifowrite;
         if ((fifowrite = open(path, O_RDWR)) < 0)
             fprintf(stderr, "open error\n" );
-        if (write(fifowrite, &createdMatrix, sizeof(createdMatrix)) < 0)
+        if (write(fifowrite, &createdMatrix.pidOfClient, sizeof(int)) < 0)
+            fprintf(stderr, "write error\n" );       
+        if (write(fifowrite, &createdMatrix.result1, sizeof(double)) < 0)
+            fprintf(stderr, "write error\n" );       
+        if (write(fifowrite, &createdMatrix.timeElaps1, sizeof(double)) < 0)
+            fprintf(stderr, "write error\n" );       
+        if (write(fifowrite, &createdMatrix.result2, sizeof(double)) < 0)
+            fprintf(stderr, "write error\n" );       
+        if (write(fifowrite, &createdMatrix.timeElaps2, sizeof(double)) < 0)
             fprintf(stderr, "write error\n" );
 
         close(fifowrite);

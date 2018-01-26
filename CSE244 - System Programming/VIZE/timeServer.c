@@ -132,24 +132,19 @@ void HandleSignal(int sig, siginfo_t *siginfo, void *context)
                 matrix = (double **)malloc((2*matrixSize)*sizeof(double *));
                 for (j=0;j<2*matrixSize;j++)
                     matrix[j] = (double *)malloc((2*matrixSize)*sizeof(double));
-                perror("h2");
                 detOfMatrix = createInvertibleMatrix(matrix,2*matrixSize);
-                perror("h3");
 
-                clock_t toc = clock();
                 if (gettimeofday(&tpend, NULL)) {
                     fprintf(stderr, "Failed to get end time\n");
                 }
                 timedif = MILLION*(tpend.tv_sec - tpstart.tv_sec) +
                 tpend.tv_usec - tpstart.tv_usec;
                 timeOfMatrixGenerated =  (double)timedif / 1000.0;
-                perror("h24");
 
                 fprintf(pFile, "%f.ms\t",timeOfMatrixGenerated );
                 fprintf(pFile, "%s\t",pidOfClient );
                 fprintf(pFile, "%f\n",detOfMatrix );
 
-                perror("h4");
 
                 if (mkfifo(path, 0777) == -1) {
                     if (errno != EEXIST) {
@@ -168,14 +163,12 @@ void HandleSignal(int sig, siginfo_t *siginfo, void *context)
                             fprintf(stderr, "write error\n" );
 
                 close(fifowrite);
-                for(i =0; i<2*matrixSize; ++i){
-                    for(j=0; j<2*matrixSize; ++j)
-                        fprintf(stderr, "%.2f   ",matrix[i][j] );
-                    fprintf(stderr, "\n" );
-                }
                 fclose(pFile);
-            fprintf(stderr, "ÖLDÜM:%d\n",getpid() );
                 
+                for(int i=0; i<2*matrixSize; ++i)
+                    free(matrix[i]);
+                free(matrix);
+
                 _exit(0);
             }
 
@@ -198,7 +191,6 @@ void HandleSignal(int sig, siginfo_t *siginfo, void *context)
                 fprintf(stderr, "total signal received%d mainfifo:%s\n",count,MAINFIFO );
                 unlink(MAINFIFO);
             }
-            fprintf(stderr, "ÖLDÜM:%d\n",getpid() );
             _exit(0);
         break;
         case SIGUSR2:
@@ -220,10 +212,8 @@ void HandleSignal(int sig, siginfo_t *siginfo, void *context)
             if(serverPid == getpid()){
                 time ( &rawtime );
                 timeinfo = localtime ( &rawtime );
-                char * time = asctime (timeinfo);
-                fprintf(stderr, "byeee\n" );
-                fprintf(stderr, "total signal received%d\n",count );
-                fprintf(pFile, "Kill signal has received %s\n",time);
+                char * time2 = asctime (timeinfo);
+                fprintf(pFile, "Kill signal has received %s\n",time2);
                 fclose(pFile);
                 char fifofile[10];
                 char fifofilewithPath[PATH_MAX];
@@ -232,8 +222,6 @@ void HandleSignal(int sig, siginfo_t *siginfo, void *context)
                 unlink(MAINFIFO);
 
             }
-            fprintf(stderr, "ÖLDÜM:%d\n",getpid() );
-
             _exit(0);
         break;
     }
@@ -274,11 +262,11 @@ void deleteLog(){
 
             
     }
+    free(dirp);
 }
 
 void timeServer(double milliseconds, int n, char * mainpipe){
     int j,i;
-    double ** matrix;
     struct sigaction act;
     int count = 0;
     double sum = 0;
@@ -382,6 +370,6 @@ int main(int argc, char** argv) {
     double time = atof(argv[1]);
     int size = atoi(argv[2]);
     timeServer(time,size,fifo);
-
+    free(fifo);
     return (0);
 }

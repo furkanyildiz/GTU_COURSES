@@ -1,0 +1,8 @@
+ONCE "make" KOMUTU ILE DERLEYİN
+
+ARDINDAN
+./server <milisaniye> <n> <pipename>
+./client <pipename>
+./results
+
+şeklinde çalıştırın.
