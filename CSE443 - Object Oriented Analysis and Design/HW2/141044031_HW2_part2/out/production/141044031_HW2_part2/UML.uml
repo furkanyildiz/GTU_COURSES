@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="411.00000000000006" y="419.0">AutoRifle</node>
+    <node x="733.0" y="419.0">Flamethrower</node>
+    <node x="0.0" y="419.0">decSuit</node>
+    <node x="274.00000000000006" y="419.0">oraSuit</node>
+    <node x="665.8356481481483" y="153.0">Accessory</node>
+    <node x="128.8634259259261" y="187.0">ASuit</node>
+    <node x="507.6134259259261" y="540.0">GUI</node>
+    <node x="662.3333333333335" y="0.0">ISuit</node>
+    <node x="929.0" y="419.0">RocketLauncher</node>
+    <node x="139.00000000000006" y="419.0">torSuit</node>
+    <node x="583.0" y="419.0">Laser</node>
+    <node x="500.1134259259261" y="708.0">Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="decSuit" target="ASuit">
+      <point x="-29.75" y="-25.5" />
+      <point x="29.75" y="379.0" />
+      <point x="142.8634259259261" y="379.0" />
+      <point x="-70.0" y="59.0" />
+    </edge>
+    <edge source="torSuit" target="ASuit">
+      <point x="-28.75" y="-25.5" />
+      <point x="167.75000000000006" y="399.0" />
+      <point x="198.8634259259261" y="399.0" />
+      <point x="-14.0" y="59.0" />
+    </edge>
+    <edge source="Laser" target="ISuit">
+      <point x="-43.33333333333337" y="-25.5" />
+      <point x="604.6666666666667" y="359.0" />
+      <point x="608.625" y="359.0" />
+      <point x="608.625" y="123.0" />
+      <point x="698.1666666666667" y="123.0" />
+      <point x="-28.66666666666663" y="36.5" />
+    </edge>
+    <edge source="GUI" target="AutoRifle">
+      <point x="-9.625" y="-59.0" />
+      <point x="574.9884259259261" y="490.0" />
+      <point x="487.00000000000006" y="490.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="GUI" target="RocketLauncher">
+      <point x="48.125" y="-59.0" />
+      <point x="632.7384259259261" y="510.0" />
+      <point x="1023.0" y="510.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="RocketLauncher" target="ISuit">
+      <point x="62.66666666666663" y="-25.5" />
+      <point x="1085.6666666666667" y="399.0" />
+      <point x="1028.2777777777778" y="399.0" />
+      <point x="1028.2777777777778" y="103.0" />
+      <point x="769.8333333333335" y="103.0" />
+      <point x="43.0" y="36.5" />
+    </edge>
+    <edge source="AutoRifle" target="ISuit">
+      <point x="-50.66666666666663" y="-25.5" />
+      <point x="436.3333333333334" y="113.0" />
+      <point x="683.8333333333335" y="113.0" />
+      <point x="-43.0" y="36.5" />
+    </edge>
+    <edge source="GUI" target="torSuit">
+      <point x="-48.125" y="-59.0" />
+      <point x="536.4884259259261" y="510.0" />
+      <point x="196.50000000000006" y="510.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="GUI" target="Flamethrower">
+      <point x="28.875" y="-59.0" />
+      <point x="613.4884259259261" y="500.0" />
+      <point x="821.0" y="500.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="RocketLauncher" target="Accessory">
+      <point x="-62.66666666666663" y="-25.5" />
+      <point x="960.3333333333335" y="389.0" />
+      <point x="792.5856481481483" y="389.0" />
+      <point x="48.75" y="93.0" />
+    </edge>
+    <edge source="Main" target="GUI">
+      <point x="-42.25" y="-25.5" />
+      <point x="542.3634259259261" y="683.0" />
+      <point x="546.1134259259261" y="683.0" />
+      <point x="-38.5" y="59.0" />
+    </edge>
+    <edge source="GUI" target="oraSuit">
+      <point x="-28.875" y="-59.0" />
+      <point x="555.7384259259261" y="500.0" />
+      <point x="332.50000000000006" y="500.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="GUI" target="Laser">
+      <point x="9.625" y="-59.0" />
+      <point x="594.2384259259261" y="490.0" />
+      <point x="648.0" y="490.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="GUI" target="decSuit">
+      <point x="-67.375" y="-59.0" />
+      <point x="517.2384259259261" y="520.0" />
+      <point x="59.5" y="520.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="oraSuit" target="ASuit">
+      <point x="-29.25" y="-25.5" />
+      <point x="303.25000000000006" y="399.0" />
+      <point x="254.8634259259261" y="399.0" />
+      <point x="42.0" y="59.0" />
+    </edge>
+    <edge source="Flamethrower" target="Accessory">
+      <point x="-58.66666666666663" y="-25.5" />
+      <point x="762.3333333333335" y="399.0" />
+      <point x="753.5856481481483" y="399.0" />
+      <point x="9.75" y="93.0" />
+    </edge>
+    <edge source="GUI" target="ISuit">
+      <point x="67.375" y="-59.0" />
+      <point x="651.9884259259261" y="520.0" />
+      <point x="1127.5" y="520.0" />
+      <point x="1127.5" y="93.0" />
+      <point x="784.1666666666667" y="93.0" />
+      <point x="57.33333333333337" y="36.5" />
+    </edge>
+    <edge source="AutoRifle" target="Accessory">
+      <point x="0.0" y="-25.5" />
+      <point x="487.00000000000006" y="369.0" />
+      <point x="675.5856481481483" y="369.0" />
+      <point x="-68.25" y="93.0" />
+    </edge>
+    <edge source="ASuit" target="ISuit">
+      <point x="0.0" y="-59.0" />
+      <point x="212.8634259259261" y="103.0" />
+      <point x="669.5" y="103.0" />
+      <point x="-57.33333333333337" y="36.5" />
+    </edge>
+    <edge source="Laser" target="Accessory">
+      <point x="43.33333333333337" y="-25.5" />
+      <point x="691.3333333333335" y="399.0" />
+      <point x="734.0856481481483" y="399.0" />
+      <point x="-9.75" y="93.0" />
+    </edge>
+    <edge source="Accessory" target="ISuit">
+      <point x="0.0" y="-93.0" />
+      <point x="743.8356481481483" y="133.0" />
+      <point x="726.8333333333335" y="133.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="Flamethrower" target="ISuit">
+      <point x="58.66666666666674" y="-25.5" />
+      <point x="879.6666666666667" y="399.0" />
+      <point x="860.3750000000001" y="399.0" />
+      <point x="860.3750000000001" y="113.0" />
+      <point x="755.5000000000002" y="113.0" />
+      <point x="28.666666666666742" y="36.5" />
+    </edge>
+  </edges>
+  <settings layout="Hıerarchıc Group" zoom="1.0131944444444447" x="435.69900382005017" y="239.57505140507192" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="472.7827380952381" y="246.0">NullIterator</node>
+    <node x="0.0" y="212.0">CompositeIterator</node>
+    <node x="209.2827380952381" y="0.0">EMailComponent</node>
+    <node x="89.78273809523807" y="433.0">GroupEmail</node>
+    <node x="495.9613095238096" y="735.0">Main</node>
+    <node x="406.7827380952381" y="477.5">PersonalEMail</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="PersonalEMail" target="NullIterator">
+      <point x="0.0" y="-81.5" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="CompositeIterator" target="EMailComponent">
+      <point x="72.5" y="-70.5" />
+      <point x="217.5" y="192.0" />
+      <point x="258.7827380952381" y="192.0" />
+      <point x="-99.0" y="81.0" />
+    </edge>
+    <edge source="GroupEmail" target="EMailComponent">
+      <point x="123.75" y="-126.0" />
+      <point x="362.0327380952381" y="413.0" />
+      <point x="368.7827380952381" y="413.0" />
+      <point x="368.7827380952381" y="192.0" />
+      <point x="390.7827380952381" y="192.0" />
+      <point x="33.0" y="81.0" />
+    </edge>
+    <edge source="GroupEmail" target="CompositeIterator">
+      <point x="-123.75" y="-126.0" />
+      <point x="114.53273809523807" y="413.0" />
+      <point x="72.5" y="413.0" />
+      <point x="-72.5" y="70.5" />
+    </edge>
+    <edge source="Main" target="GroupEmail">
+      <point x="-56.33333333333337" y="-25.5" />
+      <point x="524.1279761904761" y="710.0" />
+      <point x="238.28273809523807" y="710.0" />
+      <point x="0.0" y="126.0" />
+    </edge>
+    <edge source="PersonalEMail" target="EMailComponent">
+      <point x="99.0" y="-81.5" />
+      <point x="654.2827380952381" y="413.0" />
+      <point x="668.7440476190477" y="413.0" />
+      <point x="668.7440476190477" y="192.0" />
+      <point x="456.7827380952381" y="192.0" />
+      <point x="99.0" y="81.0" />
+    </edge>
+    <edge source="Main" target="EMailComponent">
+      <point x="56.33333333333337" y="-25.5" />
+      <point x="636.7946428571429" y="710.0" />
+      <point x="714.2827380952381" y="710.0" />
+      <point x="714.2827380952381" y="182.0" />
+      <point x="489.7827380952381" y="182.0" />
+      <point x="132.0" y="81.0" />
+    </edge>
+    <edge source="CompositeIterator" target="GroupEmail">
+      <point x="72.5" y="70.5" />
+      <point x="217.5" y="373.0" />
+      <point x="164.03273809523807" y="373.0" />
+      <point x="-74.25" y="-126.0" />
+    </edge>
+    <edge source="Main" target="PersonalEMail">
+      <point x="0.0" y="-25.5" />
+      <point x="580.4613095238096" y="710.0" />
+      <point x="555.2827380952381" y="710.0" />
+      <point x="0.0" y="81.5" />
+    </edge>
+  </edges>
+  <settings layout="Hıerarchıc Group" zoom="0.7000000000000001" x="355.1785714285718" y="288.57142857142856" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

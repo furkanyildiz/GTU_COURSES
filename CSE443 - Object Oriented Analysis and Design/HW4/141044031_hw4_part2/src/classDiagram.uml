@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="293.22954545454536" y="736.0">Server</node>
+    <node x="433.95113636363635" y="0.0">IGraph</node>
+    <node x="87.0" y="172.28571428571428">Graph</node>
+    <node x="0.0" y="424.0">RemoteService</node>
+    <node x="574.9386363636363" y="369.0">GUI</node>
+    <node x="449.0" y="191.0">IRemoteService</node>
+    <node x="622.9386363636363" y="736.0">Client</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="GUI" target="IRemoteService">
+      <point x="-46.599999999999966" y="-158.5" />
+      <point x="644.8386363636364" y="349.0" />
+      <point x="664.625" y="349.0" />
+      <point x="43.125" y="47.5" />
+    </edge>
+    <edge source="RemoteService" target="Graph">
+      <point x="0.0" y="-103.5" />
+      <point x="-85.5" y="70.5" />
+    </edge>
+    <edge source="Server" target="RemoteService">
+      <point x="-42.24999999999994" y="-37.0" />
+      <point x="335.4795454545455" y="711.0" />
+      <point x="172.5" y="711.0" />
+      <point x="0.0" y="103.5" />
+    </edge>
+    <edge source="Server" target="IRemoteService">
+      <point x="42.25000000000006" y="-37.0" />
+      <point x="419.9795454545455" y="711.0" />
+      <point x="554.1011363636364" y="711.0" />
+      <point x="554.1011363636364" y="349.0" />
+      <point x="578.375" y="349.0" />
+      <point x="-43.125" y="47.5" />
+    </edge>
+    <edge source="Client" target="GUI">
+      <point x="42.25" y="-37.0" />
+      <point x="58.25" y="158.5" />
+    </edge>
+    <edge source="RemoteService" target="IGraph">
+      <point x="-115.0" y="-103.5" />
+      <point x="57.5" y="349.0" />
+      <point x="69.29204545454547" y="349.0" />
+      <point x="69.29204545454547" y="138.0" />
+      <point x="468.15113636363634" y="138.0" />
+      <point x="-136.8" y="59.0" />
+    </edge>
+    <edge source="GUI" target="IGraph">
+      <point x="46.60000000000002" y="-158.5" />
+      <point x="738.0386363636364" y="339.0" />
+      <point x="804.5" y="339.0" />
+      <point x="804.5" y="148.0" />
+      <point x="673.3511363636363" y="148.0" />
+      <point x="68.39999999999998" y="59.0" />
+    </edge>
+    <edge source="Graph" target="IGraph">
+      <point x="0.0" y="-70.5" />
+      <point x="258.0" y="148.0" />
+      <point x="536.5511363636364" y="148.0" />
+      <point x="-68.4" y="59.0" />
+    </edge>
+    <edge source="GUI" target="Graph">
+      <point x="-93.19999999999996" y="-158.5" />
+      <point x="598.2386363636364" y="339.0" />
+      <point x="343.5" y="339.0" />
+      <point x="85.5" y="70.5" />
+    </edge>
+    <edge source="RemoteService" target="IRemoteService">
+      <point x="115.0" y="-103.5" />
+      <point x="287.5" y="349.0" />
+      <point x="492.125" y="349.0" />
+      <point x="-129.375" y="47.5" />
+    </edge>
+    <edge source="IRemoteService" target="IGraph">
+      <point x="0.0" y="-47.5" />
+      <point x="621.5" y="148.0" />
+      <point x="604.9511363636364" y="148.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+  </edges>
+  <settings layout="Hıerarchıc Group" zoom="0.7000000000000001" x="147.23809523809507" y="407.85714285714283" />
+  <SelectedNodes>
+    <node>Graph</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

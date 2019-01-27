@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"<Unnamed>","l":"DiscreateTransform1D"},{"p":"<Unnamed>","l":"DiscreteCosineTransform"},{"p":"<Unnamed>","l":"DiscreteFourierTransform"},{"p":"<Unnamed>","l":"Main"}]

@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="53ce519b-4cad-4d40-b822-34cc9b26d8d9" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2105535067">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.44" value="2" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="10" />
+          <entry key="uml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="10" />
+          <entry key="UML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="1" />
+          <entry key="java" value="1924" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1924" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LifeTimeOfAStudent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="559">
+              <caret line="41" column="18" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MainDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UnabletoBecomeARodForAnAxe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1020">
+              <caret line="62" column="7" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ChronicIllness.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="969">
+              <caret line="61" column="7" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NeedingSleep.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Graduate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1037">
+              <caret line="63" column="7" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Fit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="25" column="47" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ready.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="799">
+              <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/State.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/ChromicIllness.java" />
+        <option value="$PROJECT_DIR$/src/MainDemo.java" />
+        <option value="$PROJECT_DIR$/src/Client.java" />
+        <option value="$PROJECT_DIR$/src/State.java" />
+        <option value="$PROJECT_DIR$/src/UnabletoBecomeARodForAnAxe.java" />
+        <option value="$PROJECT_DIR$/src/Ready.java" />
+        <option value="$PROJECT_DIR$/src/NeedingSleep.java" />
+        <option value="$PROJECT_DIR$/src/Graduate.java" />
+        <option value="$PROJECT_DIR$/src/Fit.java" />
+        <option value="$PROJECT_DIR$/src/ChronicIllness.java" />
+        <option value="$PROJECT_DIR$/src/LifeTimeOfAStudent.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="649" />
+    <option name="y" value="14" />
+    <option name="width" value="697" />
+    <option name="height" value="775" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="141044031_HW4_part1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="141044031_HW4_part1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="141044031_HW4_part1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="141044031_HW4_part1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546038059356" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainDemo" />
+      <module name="141044031_HW4_part1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainDemo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="53ce519b-4cad-4d40-b822-34cc9b26d8d9" name="Default Changelist" comment="" />
+      <created>1545807958686</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1545807958686</updated>
+      <workItem from="1545807965601" duration="3697000" />
+      <workItem from="1545823253525" duration="2678000" />
+      <workItem from="1545900023675" duration="3621000" />
+      <workItem from="1545983488570" duration="3283000" />
+      <workItem from="1546071662127" duration="1143000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14422000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12934947" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info id="simpleUML" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3430769" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Client.java" />
+    <entry file="file://$PROJECT_DIR$/src/ClassDiagram.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="958.0" y="612.0">LifeTimeOfAStudent</node>
+            <node x="989.0" y="253.0">NeedingSleep</node>
+            <node x="684.0" y="253.0">ChronicIllness</node>
+            <node x="999.5" y="1045.0">MainDemo</node>
+            <node x="1599.0" y="253.0">Fit</node>
+            <node x="379.0" y="253.0">Ready</node>
+            <node x="1147.7363636363639" y="0.0">State</node>
+            <node x="0.0" y="253.0">UnabletoBecomeARodForAnAxe</node>
+            <node x="1294.0" y="253.0">Graduate</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="LifeTimeOfAStudent" target="Graduate">
+              <point x="31.5" y="-191.5" />
+              <point x="1115.5" y="522.0" />
+              <point x="1341.5" y="522.0" />
+              <point x="-95.0" y="114.5" />
+            </edge>
+            <edge source="UnabletoBecomeARodForAnAxe" target="State">
+              <point x="0.0" y="-114.5" />
+              <point x="179.5" y="203.0" />
+              <point x="1163.1113636363639" y="203.0" />
+              <point x="-107.625" y="91.5" />
+            </edge>
+            <edge source="UnabletoBecomeARodForAnAxe" target="LifeTimeOfAStudent">
+              <point x="0.0" y="114.5" />
+              <point x="179.5" y="582.0" />
+              <point x="976.9000000000001" y="582.0" />
+              <point x="-107.09999999999991" y="-191.5" />
+            </edge>
+            <edge source="LifeTimeOfAStudent" target="Fit">
+              <point x="69.29999999999995" y="-191.5" />
+              <point x="1153.3" y="552.0" />
+              <point x="1646.5" y="552.0" />
+              <point x="-95.0" y="114.5" />
+            </edge>
+            <edge source="MainDemo" target="LifeTimeOfAStudent">
+              <point x="-42.25" y="-25.5" />
+              <point x="1041.75" y="1020.0" />
+              <point x="1021.0" y="1020.0" />
+              <point x="-63.0" y="191.5" />
+            </edge>
+            <edge source="Fit" target="State">
+              <point x="0.0" y="-114.5" />
+              <point x="1741.5" y="223.0" />
+              <point x="1316.8613636363639" y="223.0" />
+              <point x="46.125" y="91.5" />
+            </edge>
+            <edge source="NeedingSleep" target="State">
+              <point x="0.0" y="-114.5" />
+              <point x="1131.5" y="233.0" />
+              <point x="1255.3613636363639" y="233.0" />
+              <point x="-15.375" y="91.5" />
+            </edge>
+            <edge source="NeedingSleep" target="LifeTimeOfAStudent">
+              <point x="0.0" y="114.5" />
+              <point x="1131.5" y="502.0" />
+              <point x="1090.3" y="502.0" />
+              <point x="6.2999999999999545" y="-191.5" />
+            </edge>
+            <edge source="LifeTimeOfAStudent" target="NeedingSleep">
+              <point x="-6.2999999999999545" y="-191.5" />
+              <point x="1077.7" y="502.0" />
+              <point x="1036.5" y="502.0" />
+              <point x="-95.0" y="114.5" />
+            </edge>
+            <edge source="Graduate" target="State">
+              <point x="0.0" y="-114.5" />
+              <point x="1436.5" y="233.0" />
+              <point x="1286.1113636363639" y="233.0" />
+              <point x="15.375" y="91.5" />
+            </edge>
+            <edge source="LifeTimeOfAStudent" target="State">
+              <point x="107.09999999999991" y="-191.5" />
+              <point x="1191.1" y="582.0" />
+              <point x="1894.5" y="582.0" />
+              <point x="1894.5" y="213.0" />
+              <point x="1347.6113636363639" y="213.0" />
+              <point x="76.875" y="91.5" />
+            </edge>
+            <edge source="Graduate" target="LifeTimeOfAStudent">
+              <point x="0.0" y="114.5" />
+              <point x="1436.5" y="532.0" />
+              <point x="1128.1" y="532.0" />
+              <point x="44.09999999999991" y="-191.5" />
+            </edge>
+            <edge source="LifeTimeOfAStudent" target="ChronicIllness">
+              <point x="-44.09999999999991" y="-191.5" />
+              <point x="1039.9" y="532.0" />
+              <point x="731.5" y="532.0" />
+              <point x="-95.0" y="114.5" />
+            </edge>
+            <edge source="Fit" target="LifeTimeOfAStudent">
+              <point x="0.0" y="114.5" />
+              <point x="1741.5" y="562.0" />
+              <point x="1165.9" y="562.0" />
+              <point x="81.90000000000009" y="-191.5" />
+            </edge>
+            <edge source="LifeTimeOfAStudent" target="Ready">
+              <point x="-81.89999999999998" y="-191.5" />
+              <point x="1002.1" y="562.0" />
+              <point x="426.5" y="562.0" />
+              <point x="-95.0" y="114.5" />
+            </edge>
+            <edge source="Ready" target="State">
+              <point x="0.0" y="-114.5" />
+              <point x="521.5" y="213.0" />
+              <point x="1193.8613636363639" y="213.0" />
+              <point x="-76.875" y="91.5" />
+            </edge>
+            <edge source="LifeTimeOfAStudent" target="UnabletoBecomeARodForAnAxe">
+              <point x="-119.69999999999993" y="-191.5" />
+              <point x="964.3000000000001" y="592.0" />
+              <point x="59.833333333333485" y="592.0" />
+              <point x="-119.66666666666663" y="114.5" />
+            </edge>
+            <edge source="ChronicIllness" target="State">
+              <point x="0.0" y="-114.5" />
+              <point x="826.5" y="223.0" />
+              <point x="1224.6113636363639" y="223.0" />
+              <point x="-46.125" y="91.5" />
+            </edge>
+            <edge source="ChronicIllness" target="LifeTimeOfAStudent">
+              <point x="0.0" y="114.5" />
+              <point x="826.5" y="522.0" />
+              <point x="1052.5" y="522.0" />
+              <point x="-31.5" y="-191.5" />
+            </edge>
+            <edge source="Ready" target="LifeTimeOfAStudent">
+              <point x="95.0" y="114.5" />
+              <point x="616.5" y="542.0" />
+              <point x="1027.3000000000002" y="542.0" />
+              <point x="-56.69999999999993" y="-191.5" />
+            </edge>
+          </edges>
+          <settings layout="Hıerarchıc Group" zoom="1.0" x="1130.0" y="768.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LifeTimeOfAStudent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="41" column="18" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UnabletoBecomeARodForAnAxe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="62" column="7" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ChronicIllness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="61" column="7" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NeedingSleep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graduate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="63" column="7" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Fit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="47" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ready.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="simpleUML.UMLToolWindowPlugin">
+    <General>
+      <option name="birdViewUpdateDelay" value="2000" />
+      <option name="defaultFileLocation" value="file://$PROJECT_DIR$/.." />
+    </General>
+    <Classdiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="defaultFieldsExpanded" value="false" />
+      <option name="defaultContructorsExpanded" value="false" />
+      <option name="defaultMethodsExpanded" value="false" />
+      <option name="showParameters" value="true" />
+      <option name="showTooltip" value="true" />
+      <option name="showReturnValues" value="true" />
+      <option name="longModifier" value="true" />
+      <option name="implementsBehaviour" value="1" />
+      <option name="extendsBehaviour" value="1" />
+      <option name="compartmentBehaviour" value="1" />
+      <option name="interfaceBackgroundColor" value="-6494306" />
+      <option name="abstractClassBackgroundColor" value="-1580132" />
+      <option name="classBackgroundColor" value="-6508057" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="quickSourceLinkColor" value="-16776961" />
+      <option name="quickDiagramLinkColor" value="-8454144" />
+      <option name="drawDecorations" value="false" />
+      <option name="hideFieldList" value="" />
+      <option name="showFieldList" value="" />
+      <option name="hideConstructorList" value="" />
+      <option name="showConstructorList" value="" />
+      <option name="hideMethodList" value="" />
+      <option name="showMethodList" value="" />
+      <option name="minimumFigureSize" value="0,0" />
+    </Classdiagram>
+    <Dependencydiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="0" />
+    </Dependencydiagram>
+    <Packagediagram>
+      <option name="diagramTitleFont" value="SansSerif,0,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="packageBackgroundColor" value="-4144960" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="2" />
+    </Packagediagram>
+  </component>
+</project>

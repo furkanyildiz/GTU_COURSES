@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="908.6666666666666" y="612.0">LifeTimeOfAStudent</node>
+    <node x="1294.0" y="253.0">NeedingSleep</node>
+    <node x="0.0" y="253.0">ChronicIllness</node>
+    <node x="950.1666666666665" y="1045.0">MainDemo</node>
+    <node x="305.0" y="253.0">Fit</node>
+    <node x="1599.0" y="253.0">Ready</node>
+    <node x="1123.630303030303" y="0.0">State</node>
+    <node x="915.0" y="253.0">UnabletoBecomeARodForAnAxe</node>
+    <node x="610.0" y="253.0">Graduate</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="LifeTimeOfAStudent" target="Graduate">
+      <point x="-44.09999999999991" y="-191.5" />
+      <point x="990.5666666666667" y="532.0" />
+      <point x="657.5" y="532.0" />
+      <point x="-95.0" y="114.5" />
+    </edge>
+    <edge source="UnabletoBecomeARodForAnAxe" target="State">
+      <point x="0.0" y="-114.5" />
+      <point x="1094.5" y="233.0" />
+      <point x="1231.255303030303" y="233.0" />
+      <point x="-15.375" y="91.5" />
+    </edge>
+    <edge source="UnabletoBecomeARodForAnAxe" target="LifeTimeOfAStudent">
+      <point x="119.66666666666669" y="114.5" />
+      <point x="1214.1666666666665" y="512.0" />
+      <point x="1053.5666666666666" y="512.0" />
+      <point x="18.90000000000009" y="-191.5" />
+    </edge>
+    <edge source="LifeTimeOfAStudent" target="Fit">
+      <point x="-81.89999999999998" y="-191.5" />
+      <point x="952.7666666666667" y="562.0" />
+      <point x="352.5" y="562.0" />
+      <point x="-95.0" y="114.5" />
+    </edge>
+    <edge source="MainDemo" target="LifeTimeOfAStudent">
+      <point x="42.25" y="-25.5" />
+      <point x="1076.9166666666665" y="1020.0" />
+      <point x="1097.6666666666665" y="1020.0" />
+      <point x="63.0" y="191.5" />
+    </edge>
+    <edge source="Fit" target="State">
+      <point x="0.0" y="-114.5" />
+      <point x="447.5" y="213.0" />
+      <point x="1169.755303030303" y="213.0" />
+      <point x="-76.875" y="91.5" />
+    </edge>
+    <edge source="NeedingSleep" target="State">
+      <point x="0.0" y="-114.5" />
+      <point x="1436.5" y="233.0" />
+      <point x="1262.005303030303" y="233.0" />
+      <point x="15.375" y="91.5" />
+    </edge>
+    <edge source="NeedingSleep" target="LifeTimeOfAStudent">
+      <point x="95.0" y="114.5" />
+      <point x="1531.5" y="542.0" />
+      <point x="1091.3666666666668" y="542.0" />
+      <point x="56.700000000000045" y="-191.5" />
+    </edge>
+    <edge source="LifeTimeOfAStudent" target="NeedingSleep">
+      <point x="31.5" y="-191.5" />
+      <point x="1066.1666666666665" y="522.0" />
+      <point x="1341.5" y="522.0" />
+      <point x="-95.0" y="114.5" />
+    </edge>
+    <edge source="Graduate" target="State">
+      <point x="0.0" y="-114.5" />
+      <point x="752.5" y="223.0" />
+      <point x="1200.505303030303" y="223.0" />
+      <point x="-46.125" y="91.5" />
+    </edge>
+    <edge source="LifeTimeOfAStudent" target="State">
+      <point x="119.70000000000005" y="-191.5" />
+      <point x="1154.3666666666668" y="592.0" />
+      <point x="1905.5" y="592.0" />
+      <point x="1905.5" y="203.0" />
+      <point x="1354.255303030303" y="203.0" />
+      <point x="107.625" y="91.5" />
+    </edge>
+    <edge source="Graduate" target="LifeTimeOfAStudent">
+      <point x="95.0" y="114.5" />
+      <point x="847.5" y="512.0" />
+      <point x="1015.7666666666665" y="512.0" />
+      <point x="-18.90000000000009" y="-191.5" />
+    </edge>
+    <edge source="LifeTimeOfAStudent" target="ChronicIllness">
+      <point x="-119.69999999999993" y="-191.5" />
+      <point x="914.9666666666667" y="592.0" />
+      <point x="47.5" y="592.0" />
+      <point x="-95.0" y="114.5" />
+    </edge>
+    <edge source="Fit" target="LifeTimeOfAStudent">
+      <point x="95.0" y="114.5" />
+      <point x="542.5" y="542.0" />
+      <point x="977.9666666666666" y="542.0" />
+      <point x="-56.700000000000045" y="-191.5" />
+    </edge>
+    <edge source="LifeTimeOfAStudent" target="Ready">
+      <point x="69.29999999999995" y="-191.5" />
+      <point x="1103.9666666666667" y="552.0" />
+      <point x="1646.5" y="552.0" />
+      <point x="-95.0" y="114.5" />
+    </edge>
+    <edge source="Ready" target="State">
+      <point x="0.0" y="-114.5" />
+      <point x="1741.5" y="223.0" />
+      <point x="1292.755303030303" y="223.0" />
+      <point x="46.125" y="91.5" />
+    </edge>
+    <edge source="LifeTimeOfAStudent" target="UnabletoBecomeARodForAnAxe">
+      <point x="-6.2999999999999545" y="-191.5" />
+      <point x="1028.3666666666668" y="502.0" />
+      <point x="974.8333333333333" y="502.0" />
+      <point x="-119.66666666666667" y="114.5" />
+    </edge>
+    <edge source="ChronicIllness" target="State">
+      <point x="0.0" y="-114.5" />
+      <point x="142.5" y="203.0" />
+      <point x="1139.005303030303" y="203.0" />
+      <point x="-107.625" y="91.5" />
+    </edge>
+    <edge source="ChronicIllness" target="LifeTimeOfAStudent">
+      <point x="95.0" y="114.5" />
+      <point x="237.5" y="572.0" />
+      <point x="940.1666666666666" y="572.0" />
+      <point x="-94.5" y="-191.5" />
+    </edge>
+    <edge source="Ready" target="LifeTimeOfAStudent">
+      <point x="0.0" y="114.5" />
+      <point x="1741.5" y="562.0" />
+      <point x="1116.5666666666666" y="562.0" />
+      <point x="81.90000000000009" y="-191.5" />
+    </edge>
+  </edges>
+  <settings layout="Hıerarchıc Group" zoom="1.0" x="363.5" y="189.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

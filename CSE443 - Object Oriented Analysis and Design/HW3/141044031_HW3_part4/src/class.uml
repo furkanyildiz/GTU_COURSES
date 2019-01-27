@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="402.90000000000003" y="0.0">DiscreateTransform1D</node>
+    <node x="0.0" y="256.0">DiscreteFourierTransform</node>
+    <node x="517.5" y="446.0">Main</node>
+    <node x="408.00000000000006" y="300.5">DiscreteCosineTransform</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="DiscreteFourierTransform" target="DiscreateTransform1D">
+      <point x="0.0" y="-70.0" />
+      <point x="194.0" y="231.0" />
+      <point x="467.56666666666666" y="231.0" />
+      <point x="-129.33333333333337" y="103.0" />
+    </edge>
+    <edge source="DiscreteCosineTransform" target="DiscreateTransform1D">
+      <point x="0.0" y="-25.5" />
+      <point x="602.0" y="231.0" />
+      <point x="603.9000000000001" y="229.0" />
+      <point x="0.0" y="103.0" />
+    </edge>
+    <edge source="Main" target="DiscreteFourierTransform">
+      <point x="-56.33333333333337" y="-25.5" />
+      <point x="545.6666666666666" y="421.0" />
+      <point x="194.0" y="421.0" />
+      <point x="0.0" y="70.0" />
+    </edge>
+    <edge source="Main" target="DiscreteCosineTransform">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="Main" target="DiscreateTransform1D">
+      <point x="56.33333333333338" y="-25.5" />
+      <point x="658.3333333333335" y="421.0" />
+      <point x="806.5" y="421.0" />
+      <point x="806.5" y="231.0" />
+      <point x="726.2333333333333" y="231.0" />
+      <point x="129.33333333333337" y="103.0" />
+    </edge>
+  </edges>
+  <settings layout="Hıerarchıc Group" zoom="1.0" x="355.0" y="231.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

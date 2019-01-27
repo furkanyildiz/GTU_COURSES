@@ -1,0 +1,1 @@
+"java -jar 141044031_HW4_part1.jar" komutu ile çalıştırabilirsiniz.

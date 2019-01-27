@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="20.493749999999977" y="124.0">TurboPaymentClass</node>
+    <node x="0.0" y="0.0">TurboPayment</node>
+    <node x="510.79999999999995" y="0.0">ModernPayment</node>
+    <node x="343.49375" y="101.0">ModernPaymentAdapter</node>
+    <node x="667.49375" y="124.0">ModernPaymentClass</node>
+    <node x="410.49375" y="248.0">Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ModernPaymentAdapter" target="TurboPayment">
+      <point x="-101.0" y="-48.5" />
+      <point x="393.99375" y="76.0" />
+      <point x="252.5" y="76.0" />
+      <point x="101.0" y="25.5" />
+    </edge>
+    <edge source="Main" target="ModernPaymentClass">
+      <point x="67.60000000000002" y="-25.5" />
+      <point x="562.59375" y="228.0" />
+      <point x="797.99375" y="228.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="Main" target="ModernPayment">
+      <point x="33.80000000000001" y="-25.5" />
+      <point x="528.79375" y="218.0" />
+      <point x="656.99375" y="218.0" />
+      <point x="656.99375" y="76.0" />
+      <point x="673.925" y="76.0" />
+      <point x="32.625" y="25.5" />
+    </edge>
+    <edge source="Main" target="TurboPayment">
+      <point x="-67.60000000000002" y="-25.5" />
+      <point x="427.39374999999995" y="228.0" />
+      <point x="9.993749999999977" y="228.0" />
+      <point x="9.993749999999977" y="76.0" />
+      <point x="50.5" y="76.0" />
+      <point x="-101.0" y="25.5" />
+    </edge>
+    <edge source="ModernPaymentClass" target="ModernPayment">
+      <point x="0.0" y="-25.5" />
+      <point x="797.99375" y="76.0" />
+      <point x="739.175" y="76.0" />
+      <point x="97.875" y="25.5" />
+    </edge>
+    <edge source="ModernPaymentAdapter" target="ModernPayment">
+      <point x="0.0" y="-48.5" />
+      <point x="494.99375" y="76.0" />
+      <point x="543.425" y="76.0" />
+      <point x="-97.875" y="25.5" />
+    </edge>
+    <edge source="Main" target="TurboPaymentClass">
+      <point x="-33.80000000000001" y="-25.5" />
+      <point x="461.19374999999997" y="218.0" />
+      <point x="171.99374999999998" y="218.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="TurboPaymentClass" target="TurboPayment">
+      <point x="0.0" y="-25.5" />
+      <point x="171.99374999999998" y="76.0" />
+      <point x="151.5" y="76.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="Main" target="ModernPaymentAdapter">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="48.5" />
+    </edge>
+  </edges>
+  <settings layout="Hıerarchıc Group" zoom="1.0" x="85.0" y="12.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
